@@ -113,3 +113,24 @@ body {
   font-size: 15px;
   line-height: 1.6;
 }
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .box-top {
+    grid-column: 1 / 2;
+  }
+}
+
+@media (max-width: 375px) {
+  .box-top {
+    padding: 30px;
+  }
+
+  .box-left,
+  .box-right {
+    padding: 30px;
+  }
+}
